@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
 
       - name: Install portaudio19-dev
-        run: apt-get install portaudio19-dev
+        run: sudo apt-get install portaudio19-dev
 
       - name: Install pyaudio
         run: pip install pyaudio
