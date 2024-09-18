@@ -27,11 +27,11 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
-      - name: Install pipwin
-        run: pip install pipwin
+      - name: Install portaudio19-dev
+        run: apt-get install portaudio19-dev
 
       - name: Install pyaudio
-        run: pipwin install pyaudio
+        run: pip install pyaudio
         
       - name: Install dependencies
         run: pip install -r requirements.txt
