@@ -26,7 +26,13 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      
+
+      - name: Install pipwin
+        run: pip install pipwin
+
+      - name: Install pyaudio
+        run: pipwin install pyaudio
+        
       - name: Install dependencies
         run: pip install -r requirements.txt
         
